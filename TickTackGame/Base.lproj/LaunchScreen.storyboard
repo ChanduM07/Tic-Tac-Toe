@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +14,62 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdC-1m-pQd">
+                                <rect key="frame" x="78.666666666666671" y="320.66666666666669" width="235.66666666666663" height="235.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticktackto" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-A4-yJa">
+                                        <rect key="frame" x="10" y="10" width="215.66666666666666" height="215.66666666666666"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eza-DJ-pMv">
+                                        <rect key="frame" x="67.333333333333329" y="205.66666666666669" width="100.99999999999999" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Rfx-7w-Q1X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MLc-A4-yJa" firstAttribute="leading" secondItem="PdC-1m-pQd" secondAttribute="leading" constant="10" id="b5X-4f-Egi"/>
+                                    <constraint firstItem="MLc-A4-yJa" firstAttribute="top" secondItem="PdC-1m-pQd" secondAttribute="top" constant="10" id="dJN-cy-24V"/>
+                                    <constraint firstAttribute="trailing" secondItem="MLc-A4-yJa" secondAttribute="trailing" constant="10" id="nlB-NA-voU"/>
+                                    <constraint firstAttribute="width" secondItem="PdC-1m-pQd" secondAttribute="height" multiplier="1:1" id="nyG-nJ-fIX"/>
+                                    <constraint firstAttribute="bottom" secondItem="eza-DJ-pMv" secondAttribute="bottom" constant="5" id="quD-BY-2EQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="MLc-A4-yJa" secondAttribute="bottom" constant="10" id="tmb-sb-0fA"/>
+                                    <constraint firstItem="eza-DJ-pMv" firstAttribute="centerX" secondItem="PdC-1m-pQd" secondAttribute="centerX" id="xSt-Mk-jen"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Chandan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCp-RH-fYU">
+                                <rect key="frame" x="187.66666666666663" y="790" width="189.33333333333337" height="28"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PdC-1m-pQd" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="NwT-f2-qMl"/>
+                            <constraint firstItem="BCp-RH-fYU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fMM-Yo-CpH"/>
+                            <constraint firstItem="PdC-1m-pQd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hzu-Bh-qqD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BCp-RH-fYU" secondAttribute="trailing" constant="16" id="iRA-vP-vvE"/>
+                            <constraint firstItem="PdC-1m-pQd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="reO-Mv-N4j"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ticktackto" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

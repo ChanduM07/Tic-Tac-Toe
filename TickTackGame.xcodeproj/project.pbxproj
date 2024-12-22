@@ -11,7 +11,6 @@
 		17A7BDB82D16F14B002AE1C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7BDB72D16F14B002AE1C5 /* SceneDelegate.swift */; };
 		17A7BDBA2D16F14B002AE1C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7BDB92D16F14B002AE1C5 /* ViewController.swift */; };
 		17A7BDBD2D16F14B002AE1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A7BDBB2D16F14B002AE1C5 /* Main.storyboard */; };
-		17A7BDC02D16F14B002AE1C5 /* TickTackGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17A7BDBE2D16F14B002AE1C5 /* TickTackGame.xcdatamodeld */; };
 		17A7BDC22D16F14C002AE1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A7BDC12D16F14C002AE1C5 /* Assets.xcassets */; };
 		17A7BDC52D16F14C002AE1C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A7BDC32D16F14C002AE1C5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		17A7BDB72D16F14B002AE1C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17A7BDB92D16F14B002AE1C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17A7BDBC2D16F14B002AE1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17A7BDBF2D16F14B002AE1C5 /* TickTackGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickTackGame.xcdatamodel; sourceTree = "<group>"; };
 		17A7BDC12D16F14C002AE1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A7BDC42D16F14C002AE1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A7BDC62D16F14C002AE1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				17A7BDC12D16F14C002AE1C5 /* Assets.xcassets */,
 				17A7BDC32D16F14C002AE1C5 /* LaunchScreen.storyboard */,
 				17A7BDC62D16F14C002AE1C5 /* Info.plist */,
-				17A7BDBE2D16F14B002AE1C5 /* TickTackGame.xcdatamodeld */,
 			);
 			path = TickTackGame;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A7BDBA2D16F14B002AE1C5 /* ViewController.swift in Sources */,
-				17A7BDC02D16F14B002AE1C5 /* TickTackGame.xcdatamodeld in Sources */,
 				17A7BDB62D16F14B002AE1C5 /* AppDelegate.swift in Sources */,
 				17A7BDB82D16F14B002AE1C5 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,11 +295,13 @@
 				DEVELOPMENT_TEAM = VRK3VCHS66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TickTackGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +309,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.TickTackGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,11 +329,13 @@
 				DEVELOPMENT_TEAM = VRK3VCHS66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TickTackGame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +343,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.TickTackGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,19 +375,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		17A7BDBE2D16F14B002AE1C5 /* TickTackGame.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				17A7BDBF2D16F14B002AE1C5 /* TickTackGame.xcdatamodel */,
-			);
-			currentVersion = 17A7BDBF2D16F14B002AE1C5 /* TickTackGame.xcdatamodel */;
-			path = TickTackGame.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 17A7BDAA2D16F14B002AE1C5 /* Project object */;
 }
